@@ -1,0 +1,109 @@
+/*Web type scale*/
+
+/*http://type-scale.com/*/
+
+html {
+    /*    1em = 16px*/
+    font-size: 1em;
+}
+
+body {
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+    /*    font-weight: 400;*/
+    /*    150% of the font size*/
+    line-height: 1.5;
+    color: rgb(0, 0, 0);
+
+}
+
+p {
+    margin-bottom: 1.3em;
+}
+
+/*this is a group selection, selecting all the headlines h1-h4*/
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Noto Serif JP', sans-serif;
+    /*  top:1.414em right:0  bottom:0.5em left:0*/
+    margin: 1.414em 0 0.5em 0;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 3.157em;
+}
+
+h2 {
+    font-size: 2.369em;
+}
+
+h3 {
+    font-size: 1.777em;
+}
+
+h4 {
+    font-size: 1.333em;
+}
+
+small,
+.font_small {
+    font-size: 0.75em;
+}
+
+
+/* link*/
+
+a {
+    color: #0287b4;
+}
+
+a:hover {
+    color: #B2B1AE;
+}
+
+/*button style*/
+/*solid button style*/
+.btn {
+    font-size: 1rem;
+    letter-spacing: .1em;
+    line-height: 2em;
+    border-radius: 3em;
+    /*    top:1.8 right:3.6 bottom 1.8 left3.6*/
+    padding: .5em 1em;
+    color: black;
+    background: rgba(0, 0, 255, 0.5);
+    border: none;
+}
+
+.btn:hover {
+    color: white;
+    background-color: black;
+    opacity: 0.8;
+}
+
+/*outline buttons*/
+.btn-outline-primary {
+    color: indigo;
+    background-color: transparent;
+    border: 1px indigo solid;
+    transition: all 0.5s;
+}
+
+.btn-outline-primary:hover {
+    color: white;
+    background-color: indigo;
+}
+
+.view {
+    background: url(../img/header_bg.jpeg) center center no-repeat;
+    background-size:cover;
+    padding: 20em 0;
+}
+
+
+.me {}
