@@ -14,7 +14,6 @@ body {
     /*    150% of the font size*/
     line-height: 1.5;
     color: rgb(0, 0, 0);
-
 }
 
 p {
@@ -26,7 +25,7 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: 'Noto Serif JP', sans-serif;
+    font-family: 'Merriweather', serif;
     /*  top:1.414em right:0  bottom:0.5em left:0*/
     margin: 1.414em 0 0.5em 0;
     font-weight: 700;
@@ -35,11 +34,12 @@ h4 {
 
 h1 {
     margin-top: 0;
-    font-size: 3.157em;
+    font-size: 5em;
 }
 
 h2 {
-    font-size: 2.369em;
+    color: dimgray;
+    font-size: 3em;
 }
 
 h3 {
@@ -59,11 +59,11 @@ small,
 /* link*/
 
 a {
-    color: #0287b4;
+    color: dimgray;
 }
 
 a:hover {
-    color: #B2B1AE;
+    color: dimgray;
 }
 
 /*button style*/
@@ -75,35 +75,182 @@ a:hover {
     border-radius: 3em;
     /*    top:1.8 right:3.6 bottom 1.8 left3.6*/
     padding: .5em 1em;
-    color: black;
-    background: rgba(0, 0, 255, 0.5);
+    color: ghostwhite;
+    background: rgba(244, 164, 96, 1);
     border: none;
+    margin-bottom: 2em;
 }
 
 .btn:hover {
-    color: white;
-    background-color: black;
+    color: dimgray;
     opacity: 0.8;
 }
 
-/*outline buttons*/
-.btn-outline-primary {
-    color: indigo;
-    background-color: transparent;
-    border: 1px indigo solid;
-    transition: all 0.5s;
-}
-
-.btn-outline-primary:hover {
-    color: white;
-    background-color: indigo;
-}
-
 .view {
-    background: url(../img/header_bg.jpeg) center center no-repeat;
-    background-size:cover;
-    padding: 20em 0;
+    background: url(../img/backgroundPic.jpg) center center no-repeat;
+    padding: 18em 0;
+    margin-bottom: .5em;
+}
+
+.brown {
+    margin: 100;
+    background-color: sandybrown;
+}
+
+.topnav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  /*position: fixed;*/
+  overflow: hidden;
+  background-color: dimgray;
+    width: 100%;
+    /*top: 0;*/
+    z-index: 1000;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: sandybrown;
+  color: white;
 }
 
 
-.me {}
+p {
+    color: dimgray;
+}
+
+
+.name {
+    margin-top: 2em;
+    margin-bottom: 0em;
+}
+
+
+/*Portfolio thumbnails*/
+.portfolioBox {
+    border: solid lightgray 1px;
+    height: 375px;
+    width: 375px;
+    border-radius: 10px;
+    padding-top: 22.5px;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.portfolio-link img:hover {
+    opacity: 0.9;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+
+
+/*portfolio modal*/
+.portfolio-modal .modal-body {
+    position: static;
+}
+
+/*modal box size*/
+.portfolio-modal .modal-dialog {
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    /*    enable the overflow to set the screen no scrolling*/
+    /*            overflow:hidden;*/
+}
+
+/*content*/
+.portfolio-modal .modal-content {
+    /*the paragraph font color*/
+    color: #746f6f;
+    padding: 0 0 2em 0;
+    min-height: 100%;
+    border: 0;
+    border-radius: 0;
+    text-align: left;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    /*the background-color*/
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+/*project title*/
+.portfolio-modal .modal-content h2 {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    font-size: 3em;
+}
+
+
+/*bottom of the modal box including prev, next, back to work*/
+.portfolio-modal .bottom {
+    /* direction:   top right bottom left*/
+    padding: 0em 5em 2em 5em;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+/*the X close icon*/
+.portfolio-modal .modal-header .close {
+    font-size: 4em;
+    /* direction:   top right bottom left*/
+    padding: 0 1em 0 0;
+    font-weight: 200;
+    color: sandybrown;
+}
+.portfolio-modal .modal-header .close:hover {
+    color: dimgray;
+}
+
+.portfolio-modal .modal-header {
+    border-bottom: none;
+}
+
+.portfolio-modal .modal-backdrop {
+    display: none;
+    opacity: 0;
+}
+
+/*contact*/
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.social {
+    font-size: 2em;
+    color: whitesmoke;
+    display: inline-block;
+    padding: 0.5em;
+
+}
