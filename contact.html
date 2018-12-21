@@ -34,7 +34,7 @@
         <a href="extracirricular.html">Extracurricular</a>
         <a class="active" href="contact.html">Contact</a>
         <a class="social" href=" tel:+2485501775 " style="float: right"><i class="fas fa-phone-square"></i></a>
-        <a class="social" href="mailto:leesnap@umich.edu " style="float: right"><i class="fas fa-at"></i></a>
+        <a class="social" href="mailto:leesnap@umich.edu " style="float: right"><i class="fa fa-envelope"></i></a>
         <a class="social" href="https://github.com/shlee2017" style="float: right"><i class="fab fa-github"></i></a>
         <a class="social" href="https://www.linkedin.com/in/ethan-lee-743247171" style="float: right"><i class="fab fa-linkedin-in"></i></a>
     </div>
@@ -42,17 +42,15 @@
         <div class="row justify-content-center">
         <div class="col-md-8">
             <h2>Contact Form</h2>
-            <form action="/action_page.php">
-                <label for="fname" style="color: dimgray">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                <label for="lname" style="color: dimgray">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                <label for="subject" style="color: dimgray">Subject</label>
-                <textarea id="subject" name="subject" placeholder="Write something.. Not working right now. Have to learn PHP." style="height:200px"></textarea>
+            <form action="https://formspree.io/leesnap@umich.edu" method="POST">
+                <label for="name" style="color: dimgray">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name..">
+                <label for="mail" style="color: dimgray">Email</label>
+                <input type="text" id="mail" name="email" placeholder="Your email..">
+                <label for="message" style="color: dimgray">Message</label>
+                <textarea id="message" name="message" placeholder="Write something.. Not working right now. Have to learn PHP." style="height:200px"></textarea>
                 <div class="text-center">
-                    <a href = "#" class="btn">
-                        Submit
-                    </a>
+                    <input type="submit" value="Submit">
                 </div>
             </form>
         </div>
