@@ -247,6 +247,19 @@ input[type=text], select, textarea {
   resize: vertical;
 }
 
+input[type=submit] {
+  font-size: 1rem;
+    letter-spacing: .1em;
+    line-height: 2em;
+    border-radius: 3em;
+    /*    top:1.8 right:3.6 bottom 1.8 left3.6*/
+    padding: .5em 1em;
+    color: ghostwhite;
+    background: rgba(244, 164, 96, 1);
+    border: none;
+    margin-bottom: 2em;
+}
+
 input[type=submit]:hover {
     color: dimgray;
     opacity: 0.8;
