@@ -247,6 +247,12 @@ input[type=text], select, textarea {
   resize: vertical;
 }
 
+input[type=submit]:hover {
+    color: dimgray;
+    opacity: 0.8;
+    transition: all 0.5s;
+}
+
 .social {
     font-size: 2em;
     color: whitesmoke;
