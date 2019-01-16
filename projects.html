@@ -40,7 +40,16 @@
     <div class="container-fluid" style="padding-top: 50px">
         <div class="row justify-content-center">
             <div class="col-md-3.5">
-                <div class= "portfolioBox" style="margin: 5px">
+                <div class= "portfolioBox">
+                    <!--                wrap picture with a tag-->
+                    <a href="#" class="portfolio-link " data-toggle="modal" data-target="#portfolioModal3">
+                        <img class="img-fluid " style="border-radius: 10px" src="img/iphone.png" alt="iphone">
+                    </a>
+                    <p class="text-center" style="padding-top: 10px"><strong>Diet Meal Planner</strong></p>
+                </div>
+            </div>
+            <div class="col-md-3.5">
+                <div class= "portfolioBox">
                     <!--                wrap picture with a tag-->
                     <a href="#" class="portfolio-link " data-toggle="modal" data-target="#portfolioModal1">
                         <img class="img-fluid " src="img/reddit-icon.png" alt="Reddit">
@@ -49,10 +58,10 @@
                 </div>
             </div>
             <div class="col-md-3.5">
-                <div class= "portfolioBox" style="margin: 5px">
+                <div class= "portfolioBox">
                     <!--                wrap picture with a tag-->
                     <a href="#" class="portfolio-link " data-toggle="modal" data-target="#portfolioModal2">
-                        <img class="img-fluid " src="img/bigHouse.jpeg" style = "border-radius: 10px"alt="Big House">
+                        <img class="img-fluid " style="border-radius: 10px" src="img/bigHouse.jpeg" alt="Big House">
                     </a>
                     <p class="text-center" style="padding-top: 10px"><strong>Recycling at the Big House</strong></p>
                 </div>
@@ -152,6 +161,87 @@
                                 <p><strong>Date: </strong>December 2018</p>
                                 <strong>Github Link: </strong>
                                 <a href="https://github.com/shlee2017/Recycling-at-the-Big-House" style="color: #3366BB">https://github.com/shlee2017/Recycling-at-the-Big-House</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row bottom">
+                            <a href="#" class="mr-auto" data-dismiss="modal" style="color: #3366BB" style="color: #3366BB">Back to Work</a>
+                            <a class="prev" href="#" onclick="return false;" style="color: #3366BB" style="color: #3366BB" style="color: #3366BB">Prev</a> &nbsp; /&nbsp;
+                            <a class="next" href="#" onclick="return false;" style="color: #3366BB">Next</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!--end of portfolio modal-->
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal" id="portfolioModal3" tabindex="-1 " role="dialog " aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header justify-content-end">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <div class="modal-inner">
+                    <!--                    content goes here-->
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-8" style="padding-top: 30px">
+                                <div class="row justify-content-center">
+                                <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="3"></li>
+        </ul>
+  
+        <!-- The slideshow -->
+        <div class="carousel-inner" style="padding-bottom: 10px">
+            <div class="carousel-item active">
+                <img src="img/dietSlide0.png" alt="beginning" width="350">
+            </div>
+            <div class="carousel-item">
+                <img src="img/dietSlide1.png" alt="example meal plan" width="350">
+            </div>
+            <div class="carousel-item">
+                <img src="img/dietSlide2.png" alt="create new meal plan" width="350">
+            </div>
+            <div class="carousel-item">
+                <img src="img/dietSlide3.png" alt="after input" width="350">
+            </div>
+        </div>
+  
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+                            </div>
+                                </div>
+                            <div class="col-md-4">
+                                <h3 style="color: sandybrown">
+                                    Diet Meal Planner
+                                </h3>
+                                <p>
+                                    This app helps out users plan what food to eat for their diet. It plans out what to eat on a daily basis based on the their macros. The data consists of basic healthy food that are commonly seen in diets such as chicken breast and eggs.
+                                </p>
+                                <p><strong>Language: </strong>Swift</p>
+                                <p><strong>Date: </strong>December 2018 - Present</p>
+                                <strong>Github Link: </strong>
+                                <a href="https://github.com/shlee2017/DietPlanner" style="color: #3366BB">https://github.com/shlee2017/DietPlanner</a>
                             </div>
                         </div>
                     </div>
