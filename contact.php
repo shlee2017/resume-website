@@ -1,42 +1,85 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Basic Page Needs––––––––––––––––––––––––––– -->
+
+<head>
+    <meta http-equiv="content-type" content="text/html">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Ethan Lee's, a University of Michigan Student, own personal professional website. Can contact Ethan Lee through here.">
+    <meta name="keywords" content="Personal Website. Contact page">
+    <meta name="author" content="Ethan Lee">
+    <title>Contact</title>
+
+    <!-- Bootstrap Core CSS ––––––––––––––––––––––––––– -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS ––––––––––––––––––––––––––– -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- fontawesome ––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- To add a google font and paste the link -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <!-- Favicon––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="index.html">About Me</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="extracirricular.html">Extracurricular</a>
+        <a class="active" href="contact.php">Contact</a>
+        <a class="social" href="https://github.com/shlee2017" style="float: right"><i class="fab fa-github"></i></a>
+        <a class="social" href="https://www.linkedin.com/in/ethan-lee-743247171" style="float: right"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <div class="container-fluid" style="padding-top: 50px">
+        <div class="row justify-content-center">
+        <div class="col-md-8">
+            <h2>Contact Form</h2>
+            <form class="contact-form" action="contact.php" method="post">
+                <div class="elem-group">
+                    <label for="name" style="color: dimgray">Your Name</label>
+                    <input type="text" id="name" name="visitor_name" placeholder="Enter your name..." pattern=[A-Z\sa-z]{3,20} required>
+                </div>
+                <div class="elem-group">
+                    <label for="email" style="color: dimgray">Your E-mail</label>
+                    <input type="email" id="email" name="visitor_email" placeholder="Enter your email..." required>
+                </div>
+                <div class="elem-group">
+                    <label for="title" style="color: dimgray">Reason For Contacting</label>
+                    <input type="text" id="title" name="email_title" required placeholder="Subject..." pattern=[A-Za-z0-9\s]{6,60}>
+                </div>
+                <div class="elem-group">
+                    <label for="message" style="color: dimgray">Write your message</label>
+                    <textarea id="message" name="visitor_message" placeholder="Enter Message..." style="height:200px" required></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </div>
+        </div>
+    </div>
     
-    if(isset($_POST['submit'])) {
-        $visitor_name = "";
-        $visitor_email = "";
-        $email_title = "";
-        $visitor_message = "";
-        
-        if(isset($_POST['visitor_name'])) {
-            $visitor_name = filter_var($_POST['visitor_name'], FILTER_SANITIZE_STRING);
-        }
-        
-        if(isset($_POST['visitor_email'])) {
-            $visitor_email = str_replace(array("\r", "\n", "%0a", "%0d"), '', $_POST['visitor_email']);
-            $visitor_email = filter_var($visitor_email, FILTER_VALIDATE_EMAIL);
-        }
-        
-        if(isset($_POST['email_title'])) {
-            $email_title = filter_var($_POST['email_title'], FILTER_SANITIZE_STRING);
-        }
-        
-        if(isset($_POST['visitor_message'])) {
-            $visitor_message = htmlspecialchars($_POST['visitor_message']);
-        }
-        
-        $recipient = "leesnap@umich.edu";
-        
-        $headers  = 'From: '. $visitor_email;
-        
-        mail($recipient, $email_title, $visitor_message, $headers);
-        header("Location: contact.html?mailsend");
-        /*if(mail($recipient, $email_title, $visitor_message, $headers)) {
-            echo "<p>Thank you for contacting us, $visitor_name. You will get a reply within 24 hours.</p>";
-        } else {
-            echo '<p>We are sorry but the email did not go through.</p>';
-        }*/
-        
-    } else {
-        echo '<p>Something went wrong</p>';
-    }
     
-    ?>
+    
+    
+    
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="js/scripts.js"></script>
+<!--animation-->
+<!--js files-->
+<!--Animation-->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js "></script>
+<!-- Custom Theme JavaScript -->
+<script src="js/animation.js"></script>
+
+
+</html>
