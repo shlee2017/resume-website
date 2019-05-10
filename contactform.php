@@ -1,6 +1,7 @@
 <?php
+    echo "<p>Thank you for contacting us, $visitor_name. You will get a reply within 24 hours.</p>";
     //mail("leesnap@umich.edu", "test", "test", 'From: '."leesnap@umich.edu");
-    if(isset($_POST['submit'])) {
+    /*if(isset($_POST['submit'])) {
         $visitor_name = "";
         $visitor_email = "";
         $email_title = "";
@@ -35,6 +36,6 @@
             echo '<p>We are sorry but the email did not go through.</p>';
         }
         
-    }
+    }*/
     
     ?>
