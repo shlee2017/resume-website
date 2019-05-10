@@ -1,6 +1,6 @@
 <?php
-    
-    if(isset($_POST['submit'])) {
+    mail("leesnap@umich.edu", "test", "test", 'From: '."leesnap@umich.edu");
+    /*if(isset($_POST['submit'])) {
         $visitor_name = "";
         $visitor_email = "";
         $email_title = "";
@@ -27,14 +27,14 @@
         
         $headers  = 'From: '.$visitor_email;
         
-        /*mail($recipient, $email_title, $visitor_message, $headers);
-        header("Location: contact.html?mailsend");*/
+        mail($recipient, $email_title, $visitor_message, $headers);
+        header("Location: contact.html?mailsend");
         if(mail($recipient, $email_title, $visitor_message, $headers)) {
             echo "<p>Thank you for contacting us, $visitor_name. You will get a reply within 24 hours.</p>";
         } else {
             echo '<p>We are sorry but the email did not go through.</p>';
         }
         
-    }
+    }*/
     
     ?>
