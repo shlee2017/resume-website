@@ -1,4 +1,4 @@
-<?php
+/*<?php
     if(isset($_POST['submit'])) {
         $visitor_name = "";
         $visitor_email = "";
@@ -26,8 +26,8 @@
         
         $headers  = 'From: '.$visitor_email;
         
-        /*mail($recipient, $email_title, $visitor_message, $headers);
-        header("Location: contact.html?mailsend");*/
+        mail($recipient, $email_title, $visitor_message, $headers);
+        header("Location: contact.html?mailsend");
         if(mail($recipient, $email_title, $visitor_message, $headers)) {
             echo "<p>Thank you for contacting us, $visitor_name. You will get a reply within 24 hours.</p>";
         } else {
@@ -36,4 +36,16 @@
         
     }
     
+    ?>*/
+
+<?php
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+    $subject = $_POST['subject'];
+    $content="From: $name \n Email: $email \n Message: $message";
+    $recipient = "yourmail@yourdomain.com";
+    $mailheader = "From: $email \r\n";
+    mail($recipient, $subject, $content, $mailheader) or die("Error!");
+    echo "Email sent!";
     ?>
