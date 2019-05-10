@@ -1,6 +1,6 @@
 <?php
     
-    if($_POST) {
+    if(isset($_POST['submit'])) {
         $visitor_name = "";
         $visitor_email = "";
         $email_title = "";
